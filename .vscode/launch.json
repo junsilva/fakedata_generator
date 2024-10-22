@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "${input:max_jobs}",
+                "${input:max_skills}"
+            ]
+        }
+    ],
+    "inputs": [
+        {
+            "id": "max_jobs",
+            "type": "promptString",
+            "description": "Enter the first argument"
+        },
+        {
+            "id": "max_skills",
+            "type": "promptString",
+            "description": "Enter the second argument"
+        }
+    ]
+}
